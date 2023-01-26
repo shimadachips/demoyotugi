@@ -1,0 +1,397 @@
+*,*::before,*::after{box-sizing:border-box}*{margin:0}html,body{height:100%}body{line-height:1.5;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}#root,#__next{isolation:isolate}
+
+
+
+ header {
+    padding: 20px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    font-family: WebSubsetFont, sans-serif;
+    z-index: 200;
+   }
+   h1 {
+    margin: 0; padding: 0;
+    font-size: 28px;
+ }
+ a {	
+    text-decoration: none;
+    color: #ffffff;
+ }
+ ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    
+ }
+ li {
+    margin: 0 0 0 30px;
+    font-size: 24px;
+ }
+ .pcnav{
+    margin: 0 0 0 auto;
+ }
+
+ body{
+     background-image: url(images/buckhistory.jpg);
+     overflow-x: hidden;
+background-size: cover;
+background-position: center center;
+ }
+
+h1{
+   display: flex;
+   justify-content: center;
+}
+
+ h2{
+    font-family: WebSubsetFont, sans-serif; ;
+     color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin: 40px;
+    align-items: center;
+    line-height:50px;
+}
+
+
+h3{
+    margin-left: 60px;
+    font-size: 36px;
+    font-family: ta-f1blockline, sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: 5px 2px 00 rgba(0,0,0,1);
+    
+}
+
+
+
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    padding-top: 125px;
+}
+.inner{
+    align-items: center;
+}
+h4{
+    width: 32%;
+    bottom: -10%;
+    
+ }
+ h4 img{
+    border-radius: 45px;
+    border: 10px solid #52362D;
+ }
+ p{
+    font-family: ヒラギノ角ゴ Std, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    margin: 40px;
+    align-items: center;
+}
+.mainhsimg img{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 45px;
+    border: 10px solid #52362D;
+    padding: 0;
+ }
+
+
+
+
+
+.box2{
+    display: flex;
+    justify-content: center;
+    padding-top: 125px;
+    padding-bottom: 120px;
+}
+.inner2{
+    align-items: center;
+}
+h5{
+    width: 40%;
+    bottom: -10%;
+    
+ }
+ h5 img{
+    border-radius: 45px;
+    border: 10px solid #52362D;
+ }
+
+ footer{
+    top: 0;
+    width: 100%;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    font-family: WebSubsetFont, sans-serif;
+  }
+ 
+  .logo{
+    padding-left: 40px;
+    width: 8%;
+    
+  }
+
+
+ 
+  .fade-in {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+  }
+  
+  .fade-in-up {
+    transform: translate(0, 50px);
+  }
+  
+  .fade-in-down {
+    transform: translate(0, -50px);
+  }
+  
+  .fade-in-left {
+    transform: translate(-50px, 0);
+  }
+  
+  .fade-in-right {
+    transform: translate(50px, 0);
+  }
+  
+  .scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  
+
+  @media screen and (max-width:1051px) {
+    p{
+        font-size: 20px;
+        margin: 10px;
+        margin-right: 10px;
+    }
+    
+    }
+
+
+  @media screen and (min-width:520px) {
+    .berger{
+      display: none;
+    }
+    }
+
+
+  /*-------------------------------*/
+
+
+
+  @media screen and (max-width:520px) {
+ 
+ h1{
+     width: 70vw;
+     margin: 0 auto;
+ }
+
+  p{
+    font-size: 11px;
+    margin: 10px;
+}
+
+header{
+  display: none;
+}
+nav{
+  display: none;
+}
+.logo{
+  width: 10vw;
+}
+
+h2{
+    font-size: 20px;
+    line-height:20px;
+}
+
+
+
+.mainhsimg img{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid #52362D;
+    padding: 0;
+ }
+ h3{
+  
+  text-shadow: 2px 1px 00 rgba(0,0,0,1);
+  
+}
+
+
+ h4{
+     width: 40vw;
+ }
+ h4 img{
+    border-radius: 15px;
+    border: 3px solid #52362D;
+ }
+
+ h5{
+    width: 40vw;
+    margin-left: 15px;
+}
+
+
+
+ h5 img{
+    border-radius: 15px;
+    border: 3px solid #52362D;
+ }
+
+ h6 img{
+     width: 30vw;
+ }
+
+
+ h3 {
+     font-size: 15px;
+ }
+
+ .logo{
+     width: 15vw;
+ }
+
+/*-------ハンバーガーメニュー-------------------*/
+body {
+ 
+  margin: 0;
+  font-family: arial;
+  width: 100vw;
+  height: 100vh;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+#overlay-button {
+  position: absolute;
+  right: 2em;
+  top: 1em;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+#overlay-button span {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: white;
+  position: relative;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+#overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+#overlay-button span:after {
+  top: 10px;
+}
+#overlay-button span:before, #overlay-button span:after {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: white;
+  position: absolute;
+  content: "";
+  transition: all .2s ease-in-out;
+}
+#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+  background: #fff;
+}
+
+input[type=checkbox] {
+  display: none; 
+  
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible; 
+}
+
+input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+  
+  
+}
+input[type=checkbox]:checked ~ #overlay-button span:before {
+  transform: rotate(45deg) translate(7px, 7px);
+
+}
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+
+
+}
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #63805c;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+}
+
+#overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  padding-left: 0;
+  list-style-type: none;
+}
+#overlay ul li {
+  padding: 1em;
+}
+#overlay ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+#overlay ul li a:hover {
+  color: #000!important;
+}
+
+
+  }
+
+/*-------------------------------*/
+
